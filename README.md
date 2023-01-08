@@ -2,7 +2,7 @@
 
 XInput reverse-engineering tools and documentation
 
-[![Build status](https://ci.appveyor.com/api/projects/status/sifndeu76a3wevof?svg=true)](https://ci.appveyor.com/project/nefarius/xinputhooker)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/nefarius/XInputHooker/msbuild.yml)
 
 ## About
 
@@ -18,11 +18,12 @@ This DLL project hooks common Windows APIs used internally by XInput libraries. 
 
 Build or download the `XInputHooker.dll` for the right architecture (32-Bit for 32-Bit processes and likewise for 64-Bit) and place the [`ioctls.json`](./XInputHooker/ioctls.json) file in the same directory as the DLL. [Inject](https://github.com/nefarius/Injector) the `XInputHooker.dll` into a process/game using any variant of the XInput user API libraries. Upon successful injection a `XInputHooker.log` will be generated in the process root directory. All sniffed API calls will be dumped there. It will grow fast so don't run for too long 😉
 
+<!--
 ## Download
 
 ### Latest CI builds
 
-Note: AppVeyor artifacts expire after 6 months, re-building may be required if the download fails.
+Note: AppVeyor artifacts expire after 1 month, so the links might not work if no new build has happened ever since.
 
 ### x86
 
@@ -31,3 +32,5 @@ Note: AppVeyor artifacts expire after 6 months, re-building may be required if t
 ### x64
 
 - [XInputHooker.dll](https://ci.appveyor.com/api/projects/nefarius/XInputHooker/artifacts/bin/x64/XInputHooker.dll?job=Platform%3A%20x64)
+
+-->
